@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {}
+    "net7.0": {
+      "ClassLib/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/ClassLib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ClassLib.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "ClassLib/1.0.0": {
+      "type": "project",
+      "path": "../ClassLib/ClassLib.csproj",
+      "msbuildProject": "../ClassLib/ClassLib.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net7.0": []
+    "net7.0": [
+      "ClassLib >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\serge\\.nuget\\packages\\": {}
@@ -13,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Programming\\csproj\\CsHomeworkDatabase\\Console\\Console.csproj",
+      "projectUniqueName": "c:\\Programming\\csproj\\CsHomeworkDatabase\\Console\\Console.csproj",
       "projectName": "Console",
-      "projectPath": "C:\\Programming\\csproj\\CsHomeworkDatabase\\Console\\Console.csproj",
+      "projectPath": "c:\\Programming\\csproj\\CsHomeworkDatabase\\Console\\Console.csproj",
       "packagesPath": "C:\\Users\\serge\\.nuget\\packages\\",
-      "outputPath": "C:\\Programming\\csproj\\CsHomeworkDatabase\\Console\\obj\\",
+      "outputPath": "c:\\Programming\\csproj\\CsHomeworkDatabase\\Console\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\serge\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -31,7 +50,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "c:\\Programming\\csproj\\CsHomeworkDatabase\\ClassLib\\ClassLib.csproj": {
+              "projectPath": "c:\\Programming\\csproj\\CsHomeworkDatabase\\ClassLib\\ClassLib.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
