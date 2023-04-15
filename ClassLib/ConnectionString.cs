@@ -1,5 +1,5 @@
 ﻿namespace ClassLib;
 public static class ConnectionString
 {
-    static string MsSqlConnection;
+    public static string MsSqlConnection => @"Data Source=.\SQLEXPRESS;Database=testing;Trusted_Connection=True;";
 }
