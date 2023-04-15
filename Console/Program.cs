@@ -1,7 +1,22 @@
-﻿internal class Program
+﻿using ClassLib;
+
+internal class Program
 {
-    private static void Main(string[] args)
+    static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        var connector = new MainConnector();
+
+        var result = connector.ConnectAsync();
+
+        if (result.Result)
+        {
+            Console.WriteLine("Подключено успешно!");
+        }
+        else
+        {
+            Console.WriteLine("Ошибка подключения!");
+        }
+
+        Console.ReadKey();
     }
 }
