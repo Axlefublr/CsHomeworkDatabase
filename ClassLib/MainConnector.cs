@@ -4,6 +4,7 @@ namespace ClassLib;
 
 public class MainConnector
 {
+    SqlConnection connection;
     public async Task<bool> ConnectAsync()
     {
         bool result;
@@ -25,6 +26,18 @@ public class MainConnector
         if (connection.State == ConnectionState.Open)
         {
             await connection.CloseAsync();
+        }
+    }
+
+    public SqlConnection GetConnection()
+    {
+        if (connection.State == ConnectionState.Open)
+        {
+            return connection;
+        }
+        else
+        {
+            throw new Exception("Подключение уже закрыто!");
         }
     }
 }

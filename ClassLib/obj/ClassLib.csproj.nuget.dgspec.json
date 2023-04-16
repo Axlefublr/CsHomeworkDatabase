@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Programming\\csproj\\CsHomeworkDatabase\\ClassLib\\ClassLib.csproj": {}
+    "C:\\Programming\\csproj\\CsHomeworkDatabase\\ClassLib\\ClassLib.csproj": {}
   },
   "projects": {
-    "c:\\Programming\\csproj\\CsHomeworkDatabase\\ClassLib\\ClassLib.csproj": {
+    "C:\\Programming\\csproj\\CsHomeworkDatabase\\ClassLib\\ClassLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Programming\\csproj\\CsHomeworkDatabase\\ClassLib\\ClassLib.csproj",
+        "projectUniqueName": "C:\\Programming\\csproj\\CsHomeworkDatabase\\ClassLib\\ClassLib.csproj",
         "projectName": "ClassLib",
-        "projectPath": "c:\\Programming\\csproj\\CsHomeworkDatabase\\ClassLib\\ClassLib.csproj",
+        "projectPath": "C:\\Programming\\csproj\\CsHomeworkDatabase\\ClassLib\\ClassLib.csproj",
         "packagesPath": "C:\\Users\\serge\\.nuget\\packages\\",
-        "outputPath": "c:\\Programming\\csproj\\CsHomeworkDatabase\\ClassLib\\obj\\",
+        "outputPath": "C:\\Programming\\csproj\\CsHomeworkDatabase\\ClassLib\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\serge\\AppData\\Roaming\\NuGet\\NuGet.Config"

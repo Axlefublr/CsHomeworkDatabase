@@ -2026,11 +2026,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Programming\\csproj\\CsHomeworkDatabase\\Console\\Console.csproj",
+      "projectUniqueName": "C:\\Programming\\csproj\\CsHomeworkDatabase\\Console\\Console.csproj",
       "projectName": "Console",
-      "projectPath": "c:\\Programming\\csproj\\CsHomeworkDatabase\\Console\\Console.csproj",
+      "projectPath": "C:\\Programming\\csproj\\CsHomeworkDatabase\\Console\\Console.csproj",
       "packagesPath": "C:\\Users\\serge\\.nuget\\packages\\",
-      "outputPath": "c:\\Programming\\csproj\\CsHomeworkDatabase\\Console\\obj\\",
+      "outputPath": "C:\\Programming\\csproj\\CsHomeworkDatabase\\Console\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\serge\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -2045,8 +2045,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "c:\\Programming\\csproj\\CsHomeworkDatabase\\ClassLib\\ClassLib.csproj": {
-              "projectPath": "c:\\Programming\\csproj\\CsHomeworkDatabase\\ClassLib\\ClassLib.csproj"
+            "C:\\Programming\\csproj\\CsHomeworkDatabase\\ClassLib\\ClassLib.csproj": {
+              "projectPath": "C:\\Programming\\csproj\\CsHomeworkDatabase\\ClassLib\\ClassLib.csproj"
             }
           }
         }

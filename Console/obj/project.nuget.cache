@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WYsm2U1/wtXbEigI+dZm6CDUY8kdVx+FyBTuECjFN7I8WsztqfV57QdecEr6L2FpUUHP+9zlG2JGvRN7w82CLA==",
+  "dgSpecHash": "EZGODe47/knGpbHvHoezFiT5xVQqKvdhR9HeEgknsS4ks3uL0S8psev/WMPYokx0cxMVKUWDEA3E1Gmr8uSJaw==",
   "success": true,
-  "projectFilePath": "c:\\Programming\\csproj\\CsHomeworkDatabase\\Console\\Console.csproj",
+  "projectFilePath": "C:\\Programming\\csproj\\CsHomeworkDatabase\\Console\\Console.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\serge\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\serge\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
