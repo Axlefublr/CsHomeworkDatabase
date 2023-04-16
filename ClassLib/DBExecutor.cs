@@ -1,3 +1,6 @@
+using System.Data;
+using Microsoft.Data.SqlClient;
+
 namespace ClassLib;
 
 public class DbExecutor
@@ -8,4 +11,15 @@ public class DbExecutor
         this.connector = connector;
     }
 
+    public DataTable SelectAll(string table)
+    {
+        string selectcommandtext = "SELECT * FROM " + table;
+        SqlDataAdapter adapter = new(
+            selectcommandtext,
+            connector.GetConnection()
+        );
+        DataSet ds = new();
+        adapter.Fill(ds);
+        return ds.Tables[0];
+    }
 }
