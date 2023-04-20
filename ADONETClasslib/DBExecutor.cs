@@ -54,6 +54,19 @@ public class DbExecutor
         return command.ExecuteNonQuery();
     }
 
+    public int UpdateByColumn(string table, string columntocheck, string valuecheck, string columntoupdate, string valueupdate)
+    {
+        var command = new SqlCommand
+        {
+            CommandType = CommandType.Text,
+            CommandText = "update   " + table + " set " + columntoupdate + " = '" + valueupdate + "'  where " + columntocheck + " = '" + valuecheck + "';",
+            Connection = connector.GetConnection(),
+        };
+
+        return command.ExecuteNonQuery();
+
+    }
+
     public int ExecProcedureAdding(string login, string name)
     {
         var command = new SqlCommand

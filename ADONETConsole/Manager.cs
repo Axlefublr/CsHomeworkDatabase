@@ -85,4 +85,6 @@ public class Manager
     {
         dbExecutor.ExecProcedureAdding(login, name);
     }
+    
+    
 }
