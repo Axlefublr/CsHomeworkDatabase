@@ -40,4 +40,5 @@ public class MainConnector
             throw new Exception("Подключение уже закрыто!");
         }
     }
+
 }

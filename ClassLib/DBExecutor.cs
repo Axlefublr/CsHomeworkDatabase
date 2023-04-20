@@ -22,4 +22,36 @@ public class DbExecutor
         adapter.Fill(ds);
         return ds.Tables[0];
     }
+
+    public SqlDataReader SelectAllCommandReader(string table)
+    {
+        var command = new SqlCommand
+        {
+            CommandType = CommandType.Text,
+            CommandText = "select * from " + table,
+            Connection = connector.GetConnection(),
+        };
+
+        SqlDataReader reader = command.ExecuteReader();
+
+        if (reader.HasRows)
+        {
+            return reader;
+        }
+
+        return null;
+    }
+
+    public int DeleteByColumn(string table, string column, string value)
+    {
+        var command = new SqlCommand
+        {
+            CommandType = CommandType.Text,
+            CommandText = "delete from " + table + " where " + column + " = '" + value + "';",
+            Connection = connector.GetConnection(),
+        };
+
+        return command.ExecuteNonQuery();
+    }
+
 }
