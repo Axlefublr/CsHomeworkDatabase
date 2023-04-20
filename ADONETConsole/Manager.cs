@@ -1,5 +1,5 @@
-using ADONETClasslib;
 using System.Data;
+using ADONETClasslib;
 
 namespace ADONETConsole;
 
@@ -7,9 +7,19 @@ public class Manager
 {
     private MainConnector connector;
     private DbExecutor dbExecutor;
+    private Table userTable;
     public Manager()
     {
         connector = new MainConnector();
+
+        userTable = new Table
+        {
+            Name = "NetworkUser",
+            ImportantField = "Login"
+        };
+        userTable.Fields.Add("Id");
+        userTable.Fields.Add("Login");
+        userTable.Fields.Add("Name");
     }
 
     public void Connect()
