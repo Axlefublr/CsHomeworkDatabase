@@ -27,6 +27,22 @@ internal class Program
 
         data = db.SelectAll(tablename);
 
+        foreach (DataColumn column in data.Columns)
+        {
+            Console.WriteLine($"{column.ColumnName}\t");
+        }
+        Console.WriteLine();
+
+        foreach (DataRow row in data.Rows)
+        {
+            var cells = row.ItemArray;
+            foreach (var cell in cells)
+            {
+                Console.Write($"{cell}\t");
+            }
+            Console.WriteLine();
+        }
+
         Console.WriteLine("Отключаем БД!");
         connector.DisconnectAsync();
 
