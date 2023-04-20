@@ -1,6 +1,4 @@
-﻿using System.Data;
-using ADONETClasslib;
-
+﻿
 namespace ADONETConsole;
 
 internal class Program
