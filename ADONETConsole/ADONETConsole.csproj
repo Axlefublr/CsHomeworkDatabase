@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
-    <ProjectReference Include="..\ClassLib\ClassLib.csproj" />
+    <ProjectReference Include="..\ADONETClasslib\ADONETClasslib.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

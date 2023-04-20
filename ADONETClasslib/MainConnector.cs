@@ -1,6 +1,6 @@
 using Microsoft.Data.SqlClient;
 
-namespace ClassLib;
+namespace ADONETClasslib;
 
 public class MainConnector
 {

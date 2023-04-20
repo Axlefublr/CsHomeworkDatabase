@@ -1,7 +1,7 @@
 using System.Data;
 using Microsoft.Data.SqlClient;
 
-namespace ClassLib;
+namespace ADONETClasslib;
 
 public class DbExecutor
 {

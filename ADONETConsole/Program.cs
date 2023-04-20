@@ -1,5 +1,7 @@
 ﻿using System.Data;
-using ClassLib;
+using ADONETClasslib;
+
+namespace ADONETConsole;
 
 internal class Program
 {

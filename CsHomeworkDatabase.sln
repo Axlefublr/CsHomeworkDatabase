@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLib", "ClassLib\ClassLib.csproj", "{F4111DE4-418F-41E6-AF26-7F351DA85C9F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADONETClasslib", "ADONETClasslib\ADONETClasslib.csproj", "{F4111DE4-418F-41E6-AF26-7F351DA85C9F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Console", "Console\Console.csproj", "{557DC981-3A4A-482B-A5E6-7F2D4EA19147}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADONETConsole", "ADONETConsole\ADONETConsole.csproj", "{557DC981-3A4A-482B-A5E6-7F2D4EA19147}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
