@@ -85,6 +85,9 @@ public class Manager
     {
         dbExecutor.ExecProcedureAdding(login, name);
     }
-    
-    
+
+    public int UpdateUserByLogin(string value, string newvalue)
+    {
+        return dbExecutor.UpdateByColumn(userTable.Name, userTable.ImportantField, value, userTable.Fields[2], newvalue);
+    }
 }
