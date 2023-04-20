@@ -80,4 +80,9 @@ public class Manager
     {
         return dbExecutor.DeleteByColumn(userTable.Name, userTable.ImportantField, value);
     }
+
+    public void AddUser(string login, string name)
+    {
+        dbExecutor.ExecProcedureAdding(login, name);
+    }
 }

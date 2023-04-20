@@ -54,7 +54,7 @@ public class DbExecutor
         return command.ExecuteNonQuery();
     }
 
-    public int ExecProcedureAdding(string name, string login)
+    public int ExecProcedureAdding(string login, string name)
     {
         var command = new SqlCommand
         {
