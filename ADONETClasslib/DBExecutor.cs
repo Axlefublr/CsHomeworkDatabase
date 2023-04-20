@@ -54,4 +54,20 @@ public class DbExecutor
         return command.ExecuteNonQuery();
     }
 
+    public int ExecProcedureAdding(string name, string login)
+    {
+        var command = new SqlCommand
+        {
+            CommandType = CommandType.StoredProcedure,
+            CommandText = "AddingUserProc",
+            Connection = connector.GetConnection(),
+        };
+
+        command.Parameters.Add(new SqlParameter("@Name", name));
+        command.Parameters.Add(new SqlParameter("@Login", login));
+
+        return command.ExecuteNonQuery();
+
+    }
+
 }

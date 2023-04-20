@@ -9,6 +9,10 @@ internal class Program
         manager.Connect();
         manager.ShowData();
         manager.Disconnect();
+        Console.WriteLine("Введите логин для удаления:");
+        int rowsAffected = manager.DeleteUserByLogin(Console.ReadLine());
+        Console.WriteLine(rowsAffected);
+        manager.ShowData();
         Console.ReadKey();
     }
 }

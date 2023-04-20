@@ -75,4 +75,9 @@ public class Manager
 
         Console.WriteLine();
     }
+
+    public int DeleteUserByLogin(string value)
+    {
+        return dbExecutor.DeleteByColumn(userTable.Name, userTable.ImportantField, value);
+    }
 }
